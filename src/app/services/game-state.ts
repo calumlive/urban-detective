@@ -77,7 +77,7 @@ export class GameState {
 
   public async loadLocations() {
     try {
-      const data = await firstValueFrom(this.http.get<LocationData[]>('/data/locations.json'));
+      const data = await firstValueFrom(this.http.get<LocationData[]>('data/locations.json'));
       this._locations.set(data);
     } catch (err) {
       console.error('Failed to load locations', err);
@@ -90,7 +90,7 @@ export class GameState {
 
   public async loadMissionData(missionId: string) {
     try {
-      const data = await firstValueFrom(this.http.get<MissionDetail[]>('/data/missions.json'));
+      const data = await firstValueFrom(this.http.get<MissionDetail[]>('data/missions.json'));
       const mission = data.find(m => m.id === missionId);
       if (mission) {
         this._suspects.set(mission.suspects.map(s => ({ ...s, isEliminated: false })));
