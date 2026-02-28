@@ -1,0 +1,47 @@
+<div class="h-full flex flex-col overflow-hidden">
+    <!-- Sticky Header -->
+    <app-header title="The Case File"></app-header>
+
+    <!-- Scrollable Content -->
+    <div class="flex-grow overflow-y-auto scrollbar-none p-4 space-y-4">
+        <div class="bg-detective-cream paper-shadow rounded-sm p-5 flex flex-col space-y-6">
+            <!-- Handler Briefing as a Typewritten Note -->
+            <div class="font-body text-[#2D1B1B] space-y-2 border-b-2 border-dotted border-[#2D1B1B]/10 pb-4">
+                <h4 class="text-xs font-bold underline mb-2 tracking-widest">Case Briefing // Agent 014</h4>
+                <p class="text-sm leading-relaxed">
+                    "Your mission: Identify the perpetrator behind {{ missionTitle() }}. Track them through {{
+                    missionLocation() }}. Do not let them vanish into the fog."
+                </p>
+            </div>
+
+            <!-- Suspect Gallery -->
+            <div class="space-y-4">
+                <h3 class="font-heading text-center text-[#2D1B1B] text-xl border-b border-[#2D1B1B]/20 pb-2">Suspect
+                    Gallery</h3>
+
+                <div class="grid grid-cols-2 gap-4">
+                    @for (suspect of suspectList; track suspect.id) {
+                    <div class="flex flex-col items-center">
+                        <div class="polaroid w-full">
+                            <img [src]="suspect.avatar" [alt]="suspect.name"
+                                class="w-full aspect-square object-cover grayscale brightness-75 contrast-125">
+                            <p
+                                class="mt-2 text-[9px] font-body text-center font-bold text-[#2D1B1B]/80 h-3 overflow-hidden">
+                                {{ suspect.name }}</p>
+                        </div>
+                    </div>
+                    }
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Sticky Footer -->
+    <footer
+        class="flex-none p-4 pt-2 bg-detective-brown border-t border-white/5 shadow-[0_-4px_6px_-1px_rgba(0,0,0,0.1)]">
+        <button routerLink="/deployment"
+            class="w-full bg-detective-red text-white font-heading py-4 text-xl uppercase tracking-widest shadow-lg hover:bg-detective-red-dark transition-colors">
+            Start Investigation
+        </button>
+    </footer>
+</div>

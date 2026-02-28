@@ -1,0 +1,92 @@
+<!-- Header Component Template -->
+<header
+    class="flex-none p-4 pb-2 z-30 shadow-sm border-b border-white/5 flex items-center transition-colors duration-300"
+    [class.bg-detective-brown]="variant === 'brown'" [class.bg-detective-red]="variant === 'red'">
+
+    <div class="flex items-center mt-1 flex-grow">
+        @if (variant === 'red') {
+        <div class="wax-seal scale-50 -ml-4 flex-none group-active:scale-40 transition-transform duration-300">
+            <i class="fa-solid fa-magnifying-glass text-white text-sm"></i>
+        </div>
+        } @else {
+        <button (click)="goBack()"
+            class="wax-seal scale-50 -ml-4 flex-none hover:scale-[0.55] active:scale-40 transition-transform duration-300 cursor-pointer shadow-lg outline-none">
+            <i class="fa-solid fa-chevron-left text-white text-sm"></i>
+        </button>
+        }
+        <h2 class="font-heading text-white text-lg uppercase tracking-widest flex-grow ml-2 truncate">
+            {{ title }}
+        </h2>
+    </div>
+
+    <!-- Menu Toggle Button -->
+    <button (click)="toggleMenu()"
+        class="text-white p-2 hover:bg-black/10 rounded-full transition-all active:scale-95 duration-200 z-50 flex items-center justify-center w-10 h-10">
+        @if (!isMenuOpen()) {
+        <i class="fa-solid fa-bars-staggered text-xl"></i>
+        } @else {
+        <i class="fa-solid fa-xmark text-xl"></i>
+        }
+    </button>
+</header>
+
+<!-- Slide-in Menu Backdrop -->
+<div class="fixed inset-0 bg-black/70 backdrop-blur-[2px] z-[40] transition-opacity duration-300 pointer-events-auto"
+    [class.opacity-0]="!isMenuOpen()" [class.pointer-events-none]="!isMenuOpen()" (click)="closeMenu()">
+</div>
+
+<!-- Slide-in Menu Content -->
+<div class="fixed top-0 right-0 h-full w-[280px] bg-detective-brown border-l border-white/10 z-[45] shadow-[0_0_50px_rgba(0,0,0,0.8)] transition-transform duration-300 ease-out flex flex-col"
+    [class.translate-x-full]="!isMenuOpen()">
+
+    <div class="p-8 pt-20 flex-grow">
+        <div class="space-y-6">
+            <a routerLink="/" (click)="closeMenu()" class="flex items-center space-x-4 group">
+                <div
+                    class="wax-seal scale-[0.4] -ml-4 flex-none group-hover:scale-[0.55] transition-transform duration-300">
+                    <i class="fa-solid fa-house text-white text-base"></i>
+                </div>
+                <span
+                    class="font-heading text-white text-xl uppercase tracking-widest opacity-80 group-hover:opacity-100 transition-opacity">Home</span>
+            </a>
+
+            <a href="javascript:void(0)" (click)="closeMenu()"
+                class="flex items-center space-x-4 group opacity-50 cursor-not-allowed">
+                <div class="wax-seal scale-[0.4] -ml-4 flex-none">
+                    <i class="fa-solid fa-circle-info text-white text-base"></i>
+                </div>
+                <span class="font-heading text-white text-xl uppercase tracking-widest">About</span>
+            </a>
+
+            <a href="javascript:void(0)" (click)="closeMenu()"
+                class="flex items-center space-x-4 group opacity-50 cursor-not-allowed">
+                <div class="wax-seal scale-[0.4] -ml-4 flex-none">
+                    <i class="fa-solid fa-question text-white text-base"></i>
+                </div>
+                <span class="font-heading text-white text-xl uppercase tracking-widest">Help</span>
+            </a>
+
+            <a href="javascript:void(0)" (click)="closeMenu()" class="flex items-center space-x-4 group">
+                <div
+                    class="wax-seal scale-[0.4] -ml-4 flex-none group-hover:scale-[0.55] transition-transform duration-300 bg-yellow-600/20">
+                    <i class="fa-solid fa-crown text-[#FFD700] text-base"></i>
+                </div>
+                <span
+                    class="font-heading text-[#FFD700] text-xl uppercase tracking-widest opacity-80 group-hover:opacity-100 transition-opacity">Upgrade</span>
+            </a>
+        </div>
+    </div>
+
+    <!-- Footer in Menu -->
+    <div class="p-8 border-t border-white/5 bg-black/20">
+        <div class="flex flex-col items-center space-y-2">
+            <div class="w-8 h-8 rounded-full bg-detective-red flex items-center justify-center opacity-50">
+                <i class="fa-solid fa-shield text-[10px] text-white"></i>
+            </div>
+            <p class="font-body text-[10px] text-gray-500 uppercase tracking-widest text-center">
+                Authorized Personnel Only<br>
+                v1.0.4 - Nano Banana
+            </p>
+        </div>
+    </div>
+</div>

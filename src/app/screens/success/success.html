@@ -1,0 +1,78 @@
+<div class="h-full flex flex-col overflow-hidden text-detective-brown">
+    <app-header title="Case Closed"></app-header>
+
+    <!-- Content Area -->
+    <div class="flex-grow p-4 overflow-hidden flex flex-col min-h-0">
+        <div class="flex-grow bg-detective-cream paper-shadow rounded-sm p-6 flex flex-col overflow-hidden">
+            <!-- Scrollable Middle - Centered content -->
+            <div
+                class="flex-grow overflow-y-auto scrollbar-none space-y-8 flex flex-col items-center justify-center text-center py-4">
+                <div class="space-y-1 flex-none">
+                    <h2 class="font-heading text-3xl text-detective-red uppercase tracking-tighter">Case Closed</h2>
+                    <div class="h-0.5 w-16 bg-detective-red mx-auto opacity-30"></div>
+                </div>
+
+                <!-- Convicted Polaroid -->
+                <div class="relative rotate-3 mt-4 flex-none">
+                    <div class="polaroid w-56 shadow-2xl scale-110">
+                        <div class="relative aspect-square overflow-hidden bg-black">
+                            <img [src]="culprit()?.avatar" [alt]="culprit()?.name"
+                                class="w-full h-full object-cover sepia-[0.3] contrast-125 brightness-90">
+                            <!-- Convicted Stamp -->
+                            <div class="absolute inset-0 flex items-center justify-center z-10 pointer-events-none">
+                                <div
+                                    class="border-[8px] border-stamp-red rounded px-4 py-2 text-stamp-red font-heading text-4xl font-black uppercase -rotate-12 bg-white/10 backdrop-blur-sm shadow-xl">
+                                    CONVICTED
+                                </div>
+                            </div>
+                        </div>
+                        <p class="mt-4 font-body text-sm font-bold text-[#2D1B1B] uppercase tracking-widest">{{
+                            culprit()?.name }}
+                        </p>
+                    </div>
+                    <!-- Background splash -->
+                    <div class="absolute -inset-4 bg-stamp-red/5 blur-2xl rounded-full -z-10 animate-pulse"></div>
+                </div>
+
+                <div class="space-y-4 w-full flex-none">
+                    <div
+                        class="bg-black/5 p-4 border border-black/10 rounded font-body text-[11px] leading-relaxed text-[#2D1B1B]">
+                        "Outstanding work, Agent. The Alchemist of Grey Street will be spending a long time behind bars
+                        thanks
+                        to your keen observation."
+                    </div>
+
+                    <!-- Stats in a grid -->
+                    <div class="grid grid-cols-2 gap-4 border-t border-black/10 pt-4">
+                        <div class="text-left space-y-0.5">
+                            <span
+                                class="block text-[8px] text-gray-500 font-bold uppercase tracking-widest leading-none">Record
+                                Time</span>
+                            <span class="block font-heading text-xl text-detective-red font-bold">42:15</span>
+                        </div>
+                        <div class="text-right space-y-0.5">
+                            <span
+                                class="block text-[8px] text-gray-500 font-bold uppercase tracking-widest leading-none">Detection
+                                Rank</span>
+                            <div class="flex justify-end text-detective-red text-xs drop-shadow-sm">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Sticky Actions within the Paper -->
+            <div class="flex-none pt-4 border-t border-black/10">
+                <button routerLink="/" (click)="resetGame()"
+                    class="w-full bg-detective-red text-white font-heading py-4 text-xl uppercase tracking-widest shadow-lg hover:bg-detective-red-dark transition-all">
+                    Next Case
+                </button>
+            </div>
+        </div>
+    </div>
+</div>

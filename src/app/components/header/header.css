@@ -1,0 +1,5 @@
+/* Header component specific styles */
+:host {
+    display: block;
+    width: 100%;
+}

@@ -1,0 +1,57 @@
+<div class="h-full flex flex-col overflow-hidden">
+    <!-- Sticky Header -->
+    <app-header title="The Case File"></app-header>
+
+    <!-- Content Area -->
+    <div class="flex-grow p-4 overflow-hidden flex flex-col min-h-0">
+        <div class="flex-grow bg-detective-cream paper-shadow rounded-sm p-5 flex flex-col overflow-hidden">
+            <div class="text-center space-y-1 pb-2 border-b border-[#2D1B1B]/10 flex-none">
+                <h3 class="font-heading text-xl text-[#2D1B1B] uppercase tracking-tighter">Suspect Gallery</h3>
+                <p class="font-body text-[10px] text-green-700 font-bold uppercase tracking-widest leading-none">
+                    Evidence
+                    Cross-Referenced</p>
+            </div>
+
+            <!-- Suspect Grid - Now truly scrollable within the remaining space -->
+            <div class="flex-grow overflow-y-auto scrollbar-none pr-1 pt-2 my-2">
+                <div class="grid grid-cols-2 gap-4">
+                    @for (suspect of suspects; track suspect.id) {
+                    <div class="relative flex flex-col items-center" (click)="selectSuspect(suspect.id)">
+                        <div class="polaroid w-full group transition-all duration-300 pointer-events-auto"
+                            [class.selected]="selectedSuspectId() === suspect.id"
+                            [class.opacity-60]="suspect.isEliminated && selectedSuspectId() !== suspect.id"
+                            [class.cursor-not-allowed]="suspect.isEliminated"
+                            [class.cursor-pointer]="!suspect.isEliminated">
+                            <div class="relative overflow-hidden aspect-square">
+                                <img [src]="suspect.avatar" [alt]="suspect.name"
+                                    class="w-full h-full object-cover grayscale brightness-75 contrast-125 transition-all duration-1000"
+                                    [class.opacity-40]="suspect.isEliminated">
+
+                                @if (suspect.isEliminated || selectedSuspectId() === suspect.id) {
+                                <!-- Stamp -->
+                                <div class="absolute inset-0 flex items-center justify-center z-10 pointer-events-none">
+                                    <div class="stamp">
+                                        ELIMINATED
+                                    </div>
+                                </div>
+                                }
+                            </div>
+                            <p
+                                class="mt-2 text-[9px] font-body text-center font-bold text-[#2D1B1B]/80 uppercase h-3 overflow-hidden">
+                                {{ suspect.name }}</p>
+                        </div>
+                    </div>
+                    }
+                </div>
+            </div>
+
+            <!-- Sticky Actions within the Paper -->
+            <div class="flex-none pt-4 border-t border-[#2D1B1B]/10">
+                <button (click)="confirmSelection()" [disabled]="!selectedSuspectId()"
+                    class="w-full bg-detective-red text-white font-heading py-4 text-xl uppercase tracking-widest shadow-lg hover:bg-detective-red-dark transition-colors disabled:opacity-50 disabled:cursor-not-allowed disabled:grayscale">
+                    Confirm Selection & Continue
+                </button>
+            </div>
+        </div>
+    </div>
+</div>

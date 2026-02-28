@@ -1,0 +1,39 @@
+<div class="h-full flex flex-col overflow-hidden">
+    <app-header title="Urban Detective" variant="red"></app-header>
+
+    <div
+        class="flex-grow p-6 flex flex-col justify-center items-center text-center space-y-8 overflow-y-auto scrollbar-none">
+        <div class="relative">
+            <div class="wax-seal w-24 h-24 mb-4 text-3xl shadow-xl border-4 border-detective-red-dark">
+                <i class="fa-solid fa-magnifying-glass text-white"></i>
+            </div>
+            <div class="absolute -top-2 -right-2 transform rotate-12">
+                <div
+                    class="bg-detective-red text-white text-[8px] font-bold px-2 py-1 rounded shadow-sm tracking-widest uppercase">
+                    Top Secret</div>
+            </div>
+        </div>
+
+        <div class="space-y-2">
+            <h1 class="font-heading text-4xl text-white tracking-tighter uppercase drop-shadow-lg">DETECTIVE<br>NETWORK
+            </h1>
+            <p class="font-body text-gray-400 text-xs tracking-widest uppercase">Verified Personnel Only</p>
+        </div>
+
+        <div class="w-full space-y-4 pt-8">
+            <div class="relative">
+                <input type="text" placeholder="ENTER CITY NAME..."
+                    class="w-full bg-detective-wood/50 border-b-2 border-detective-red py-4 px-4 text-white text-center font-body focus:outline-none focus:border-white transition-colors placeholder:text-gray-600"
+                    (keyup.enter)="startSearch()" />
+            </div>
+
+            <button (click)="startSearch()"
+                class="w-full bg-detective-red hover:bg-detective-red-dark text-white font-heading text-xl py-4 transition-all shadow-lg uppercase tracking-widest">
+                Open Case Files
+            </button>
+        </div>
+
+        <p class="font-body text-[10px] text-gray-500 max-w-[200px]">Unauthorized access to these records is punishable
+            under maritime law.</p>
+    </div>
+</div>

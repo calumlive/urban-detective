@@ -1,0 +1,75 @@
+<div class="h-full flex flex-col overflow-hidden">
+    <!-- Sticky Header -->
+    <app-header title="Choose Your Case"></app-header>
+
+    <!-- Scrollable Content -->
+    <div class="flex-grow overflow-y-auto scrollbar-none p-4 pb-10">
+        <h4 class="font-heading text-white/40 text-xs uppercase tracking-widest pl-1 mb-4">Case Files</h4>
+
+        <div class="space-y-4">
+            @for (mission of missions(); track mission.id) {
+            @if (selectedMissionId() === mission.id) {
+            <!-- Main Case Card as a Paper Folder (Expanded) -->
+            <div class="relative pt-4 pl-4 min-h-[460px] my-6 first:mt-0">
+                <!-- Paper background decorative layers -->
+                <div
+                    class="absolute inset-0 bg-detective-cream-dark translate-x-1 translate-y-1 paper-shadow rounded-sm">
+                </div>
+                <div class="absolute inset-0 bg-detective-cream paper-shadow rounded-sm p-4 flex flex-col space-y-4">
+
+                    <div class="polaroid self-center w-[90%] -rotate-1 mb-2">
+                        <div class="h-40 bg-gray-800 bg-cover bg-center grayscale contrast-125"
+                            [style.backgroundImage]="'url(' + mission.imageUrl + ')'">
+                        </div>
+                    </div>
+
+                    <div class="font-body text-[#2D1B1B]">
+                        <h3
+                            class="text-xl font-bold border-b border-[#2D1B1B]/20 pb-1 mb-3 uppercase tracking-tighter leading-tight">
+                            {{ mission.title }}</h3>
+
+                        <div class="grid grid-cols-2 gap-y-2 text-[11px] font-bold">
+                            <div class="flex items-center"><i
+                                    class="fa-solid fa-location-dot mr-2 opacity-60 text-detective-red"></i> {{
+                                mission.location }}</div>
+                            <div class="flex items-center"><i
+                                    class="fa-regular fa-clock mr-2 opacity-60 text-detective-red"></i> {{ mission.time
+                                }}
+                            </div>
+                            <div class="flex items-center"><i
+                                    class="fa-solid fa-signal mr-2 opacity-60 text-detective-red"></i> {{
+                                mission.difficulty
+                                }}</div>
+                            <div class="flex items-center"><i
+                                    class="fa-solid fa-lock-open mr-2 opacity-60 text-detective-red"></i> {{
+                                mission.status
+                                }}</div>
+                        </div>
+                    </div>
+
+                    <div class="flex-grow"></div>
+
+                    <button (click)="startMission()"
+                        class="bg-detective-red text-white font-heading py-3 text-lg uppercase tracking-widest hover:bg-detective-red-dark transition-all active:scale-95 shadow-md">
+                        Select Case
+                    </button>
+                </div>
+            </div>
+
+            } @else {
+            <!-- Secondary Mission (Collapsed) -->
+            <div (click)="selectMission(mission.id)"
+                class="bg-detective-cream/10 border border-white/10 rounded-lg p-3 flex items-center space-x-4 hover:bg-white/5 active:scale-[0.98] transition-all cursor-pointer group">
+                <div class="w-14 h-14 bg-gray-800 rounded-md grayscale group-hover:grayscale-0 transition-all bg-cover bg-center overflow-hidden"
+                    [style.backgroundImage]="'url(' + mission.imageUrl + ')'">
+                </div>
+                <div class="font-body text-white/50 group-hover:text-white transition-colors">
+                    <h4 class="text-xs font-bold uppercase tracking-tight">{{ mission.title }}</h4>
+                    <span class="text-[9px] opacity-60">{{ mission.subtitle }}</span>
+                </div>
+            </div>
+            }
+            }
+        </div>
+    </div>
+</div>

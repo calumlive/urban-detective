@@ -1,0 +1,170 @@
+[
+    {
+        "id": "mission-1",
+        "culpritId": "suspect-6",
+        "suspects": [
+            {
+                "id": "suspect-1",
+                "name": "Arthur P.",
+                "avatar": "https://i.pravatar.cc/150?u=1",
+                "isEliminated": false
+            },
+            {
+                "id": "suspect-2",
+                "name": "Lady Eleanor",
+                "avatar": "https://i.pravatar.cc/150?u=2",
+                "isEliminated": false
+            },
+            {
+                "id": "suspect-3",
+                "name": "Silas Vane",
+                "avatar": "https://i.pravatar.cc/150?u=3",
+                "isEliminated": false
+            },
+            {
+                "id": "suspect-4",
+                "name": "Lady Vallee",
+                "avatar": "https://i.pravatar.cc/150?u=4",
+                "isEliminated": false
+            },
+            {
+                "id": "suspect-5",
+                "name": "Dr. Aris",
+                "avatar": "https://i.pravatar.cc/150?u=5",
+                "isEliminated": false
+            },
+            {
+                "id": "suspect-6",
+                "name": "Madam X",
+                "avatar": "https://i.pravatar.cc/150?u=6",
+                "isEliminated": false
+            }
+        ],
+        "clues": [
+            {
+                "id": "clue-1",
+                "title": "Field Intel 1",
+                "prompt": "Look closely at the base of Grey's Monument for a four-digit number carved into the stone.",
+                "hint": "It's near the entrance, look down.",
+                "eliminates": "suspect-1",
+                "eliminationReason": "ALIBI VERIFIED: LOCATION CLUE 1"
+            },
+            {
+                "id": "clue-2",
+                "title": "Field Intel 2",
+                "prompt": "Find the animal carved above the old bank entrance.",
+                "hint": "It's a bird of prey.",
+                "eliminates": "suspect-2",
+                "eliminationReason": "ALIBI VERIFIED: CCTV FOOTAGE"
+            },
+            {
+                "id": "clue-3",
+                "title": "Field Intel 3",
+                "prompt": "Count the number of green pillars inside the market.",
+                "hint": "Look near the weighing station.",
+                "eliminates": "suspect-3",
+                "eliminationReason": "ALIBI VERIFIED: WITNESS STATEMENT"
+            },
+            {
+                "id": "clue-4",
+                "title": "Field Intel 4",
+                "prompt": "What is the name of the mask on the left side of the Theatre Royal?",
+                "hint": "Comedy or Tragedy?",
+                "eliminates": "suspect-4",
+                "eliminationReason": "ALIBI VERIFIED: FORENSICS"
+            },
+            {
+                "id": "clue-5",
+                "title": "Field Intel 5",
+                "prompt": "Identify the crest on the front gate of the Castle.",
+                "hint": "It has three castles on it.",
+                "eliminates": "suspect-5",
+                "eliminationReason": "ALIBI VERIFIED: RECEIPT FOUND"
+            }
+        ]
+    },
+    {
+        "id": "mission-2",
+        "culpritId": "suspect-12",
+        "suspects": [
+            {
+                "id": "suspect-7",
+                "name": "John Doe",
+                "avatar": "https://i.pravatar.cc/150?u=7",
+                "isEliminated": false
+            },
+            {
+                "id": "suspect-8",
+                "name": "Jane Smith",
+                "avatar": "https://i.pravatar.cc/150?u=8",
+                "isEliminated": false
+            },
+            {
+                "id": "suspect-9",
+                "name": "Robert Brown",
+                "avatar": "https://i.pravatar.cc/150?u=9",
+                "isEliminated": false
+            },
+            {
+                "id": "suspect-10",
+                "name": "Emily Davis",
+                "avatar": "https://i.pravatar.cc/150?u=10",
+                "isEliminated": false
+            },
+            {
+                "id": "suspect-11",
+                "name": "Michael Wilson",
+                "avatar": "https://i.pravatar.cc/150?u=11",
+                "isEliminated": false
+            },
+            {
+                "id": "suspect-12",
+                "name": "Sarah Miller",
+                "avatar": "https://i.pravatar.cc/150?u=12",
+                "isEliminated": false
+            }
+        ],
+        "clues": [
+            {
+                "id": "clue-6",
+                "title": "Quayside Clue 1",
+                "prompt": "What color is the middle pillar of the Millennium Bridge?",
+                "hint": "It reflects in the water.",
+                "eliminates": "suspect-7",
+                "eliminationReason": "CLEARED: INSUFFICIENT EVIDENCE"
+            },
+            {
+                "id": "clue-7",
+                "title": "Quayside Clue 2",
+                "prompt": "Find the plaque detailing the history of the Swing Bridge.",
+                "hint": "It's on the Gateshead side.",
+                "eliminates": "suspect-8",
+                "eliminationReason": "CLEARED: ALIBI CONFIRMED"
+            },
+            {
+                "id": "clue-8",
+                "title": "Quayside Clue 3",
+                "prompt": "Locate the sculpture of the river god.",
+                "hint": "He faces the Tyne.",
+                "eliminates": "suspect-9",
+                "eliminationReason": "CLEARED: DNA MISMATCH"
+            },
+            {
+                "id": "clue-9",
+                "title": "Quayside Clue 4",
+                "prompt": "What time does the Baltic clock show?",
+                "hint": "Look up at the converted mill.",
+                "eliminates": "suspect-10",
+                "eliminationReason": "CLEARED: WITNESS TESTIMONY"
+            },
+            {
+                "id": "clue-10",
+                "title": "Quayside Clue 5",
+                "prompt": "Count the arches on the Tyne Bridge.",
+                "hint": "Look from the lower level.",
+                "eliminates": "suspect-11",
+                "eliminationReason": "CLEARED: CAMERA FOOTAGE"
+            }
+        ]
+    }
+]
