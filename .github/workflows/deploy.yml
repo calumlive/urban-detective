@@ -21,22 +21,18 @@ jobs:
         with:
           node-version: '20'
           cache: 'npm'
-          cache-dependency-path: urban-detective/package-lock.json
 
       - name: Install Dependencies 📦
         run: npm ci
-        working-directory: urban-detective
 
       - name: Build 🏗️
         run: npx ng build --configuration production --base-href /urban-detective/
-        working-directory: urban-detective
 
       - name: Create 404 Page 📄
         run: cp dist/urban-detective/browser/index.html dist/urban-detective/browser/404.html
-        working-directory: urban-detective
 
       - name: Deploy 🚀
         uses: JamesIves/github-pages-deploy-action@v4
         with:
-          folder: urban-detective/dist/urban-detective/browser # Ensure this matches your Angular build output path
+          folder: dist/urban-detective/browser # Adjusted path
           branch: gh-pages
