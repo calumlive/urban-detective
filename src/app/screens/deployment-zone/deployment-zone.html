@@ -17,28 +17,30 @@
                     </div>
                 </div>
 
-                <!-- Direction Header -->
-                <div class="bg-detective-red text-white p-3 text-center mb-1">
-                    <h4 class="font-heading text-xs uppercase tracking-widest mb-1 opacity-80">Direction Header</h4>
-                    <p class="font-body text-sm font-bold">Walk 200 yards toward the Monument...</p>
+                <!-- Starting Location -->
+                <div class="bg-detective-red text-white p-3 text-center mb-4">
+                    <h4 class="font-heading text-[10px] uppercase tracking-widest mb-1 opacity-80">Current Rendezvous
+                    </h4>
+                    <p class="font-body text-base font-bold">{{ startLocation() }}</p>
                 </div>
 
-                <!-- Map View -->
-                <div class="relative w-full h-56 bg-gray-200 border-2 border-[#2D1B1B]/10 shadow-inner overflow-hidden">
-                    <div
-                        class="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1524661135-423995f22d0b?auto=format&fit=crop&q=80&w=800')] bg-cover opacity-60 grayscale contrast-125">
-                    </div>
-                    <!-- Markers -->
-                    <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2">
-                        <i class="fa-solid fa-location-dot text-detective-red text-3xl drop-shadow-md"></i>
-                    </div>
-                    <div class="absolute top-0 right-0 p-1 opacity-30">
-                        <div class="text-[8px] font-body">Sector 4-B</div>
+                <!-- Navigation Instructions -->
+                <div class="space-y-4">
+                    <div *ngFor="let step of instructions(); let i = index" class="flex gap-4 items-start">
+                        <div
+                            class="flex-none w-8 h-8 rounded-full bg-[#2D1B1B] text-white flex items-center justify-center font-heading text-sm shadow-sm ring-1 ring-[#2D1B1B]/10">
+                            {{ i + 1 }}
+                        </div>
+                        <div class="flex-grow pt-1 text-[#2D1B1B] font-body text-sm leading-relaxed">
+                            {{ step }}
+                        </div>
                     </div>
                 </div>
 
-                <div class="font-body text-[#2D1B1B] text-sm italic py-2">
-                    Note: High magnetic interference detected in this area. Keep your eyes peeled for clues.
+                <div
+                    class="font-body text-[#2D1B1B] text-xs italic py-4 opacity-60 flex items-center gap-2 border-t border-[#2D1B1B]/5 mt-4">
+                    <i class="fa-solid fa-circle-exclamation opacity-40"></i>
+                    <span>Check surroundings for architectural landmarks as specified above.</span>
                 </div>
             </div>
 

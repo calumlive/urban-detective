@@ -7,31 +7,37 @@
         "id": "mission-1",
         "title": "THE ALCHEMIST OF GREY STREET",
         "subtitle": "Newcastle Central",
+        "summary": "A mysterious alchemist has left a trail of cryptic clues around Grey's Monument. Can you solve the riddles before the secret is lost forever?",
+        "description": "The historic heart of Newcastle holds secrets that even the stone of Grey’s Monument has forgotten. Detective, your path begins at this towering pillar. A reclusive figure known only as The Alchemist has been observed weaving through the crowds, leaving behind peculiar, hand-drawn symbols that defy any modern map. Local authorities are baffled, as each symbol seems to pulse with a faint, unexplained energy that disrupts electronic equipment in the immediate vicinity.\r\n\r\nYour investigation will take you through the elegant geometry of Grey Street, where shadows play tricks on the unprepared. You must decipher these alchemical markers to uncover the hidden lab before a volatile experiment reaches its climax. The bustling city streets are your only witnesses, and time is of the essence. Every clue discovered is a step closer to identifying this mysterious disruptor and restoring peace to the city's cobblestone soul. Trust your instincts, as the line between science and myth is about to blur.",
         "location": "Grey's Monument",
         "time": "45-60 min",
         "difficulty": "Medium",
         "status": "Paid trail available",
-        "imageUrl": "https://images.unsplash.com/photo-1571490216773-1954f9a50275?auto=format&fit=crop&q=80&w=800"
+        "imageUrl": "assets/locations/mission-1.png"
       },
       {
         "id": "mission-2",
         "title": "THE QUAYSIDE MURDER",
         "subtitle": "Quayside Mystery",
+        "summary": "A high-profile murder on the Quayside has the city in a panic. Follow the evidence along the Tyne to catch the killer.",
+        "description": "The tranquil waters of the Tyne have turned cold with the shadow of a high-profile crime. Early this morning, a prominent figure was found deceased near the iconic Millennium Bridge, sending shockwaves through the local community. The scene is complex, with multiple entry points and a tide that may have washed away critical evidence. As the sun sets behind the Tyne Bridge, the atmosphere grows tense, and the usual cheer of the Quayside is replaced by an eerie silence.\r\n\r\nYou are tasked with tracing the victim's final steps along the riverbank, from the bustling markets to the quiet corners of the pier. Witnesses are reluctant to speak, fearing the reach of those who might be involved. Every coffee cup left on a bench and every discarded ticket may hold the key to this puzzle. You must piece together a timeline that exposes the culprit before they can slip away into the dark, industrial heart of the city. The city is watching, Detective; do not let the trail go cold.",
         "location": "Tyne Bridge",
         "time": "60-90 min",
         "difficulty": "Hard",
         "status": "Pro bono investigation",
-        "imageUrl": "https://images.unsplash.com/photo-1620614835639-66c3a0720610?auto=format&fit=crop&q=80&w=800"
+        "imageUrl": "assets/locations/mission-2.png"
       },
       {
         "id": "mission-3",
         "title": "GHOSTS OF THE TUNNEL",
         "subtitle": "Newcastle Noir",
+        "summary": "Strange whispers have been heard in the Victoria Tunnel. Investigate this cold case and uncover the truth behind the hauntings.",
+        "description": "Deep beneath the surface of modern Newcastle lies the Victoria Tunnel, a subterranean labyrinth with a history of both shelter and sorrow. Recently, construction crews have reported strange occurrences: misplaced tools, sudden drops in temperature, and the unmistakable sound of whispers in the dark. While many dismiss these as urban legends, the frequency and precision of the incidents suggest a more human, and perhaps more dangerous, hand at play. The tunnel’s cold, damp walls are the setting for your most atmospheric case yet.\r\n\r\nYour journey into the depths will require a keen eye for detail and a steady nerve. The low light and echoing acoustics make identifying suspects difficult, but the physical evidence left behind tells a different story. You must navigate the narrow passages and forgotten chambers to determine if these 'ghosts' are merely a cover for a more grounded criminal operation. What lies hidden in the dark must be brought to light. Uncover the truth before the tunnel's secrets are buried once again under the weight of history.",
         "location": "Victoria Tunnel",
         "time": "30-45 min",
         "difficulty": "Easy",
         "status": "Cold case files",
-        "imageUrl": "https://images.unsplash.com/photo-1518709268805-4e9042af9f23?auto=format&fit=crop&q=80&w=800"
+        "imageUrl": "assets/locations/mission-3.png"
       }
     ]
   },
@@ -43,6 +49,8 @@
         "id": "mission-4",
         "title": "THE TOWER HEIST",
         "subtitle": "Tower of London",
+        "summary": "A daring heist at the Tower of London has left the Crown Jewels in danger. Track down the thieves through London's historic landmarks.",
+        "description": "The Crown Jewels, symbols of history and power, have been targeted in a heist that should have been impossible. Under the cover of a thick London fog, thieves bypassed the state-of-the-art security systems of the Tower of London, leaving only a single, taunting note behind. The city is on high alert, and the pressure is mounting to recover the artifacts before they disappear into the international black market. This is not just a robbery; it is a direct challenge to the security of the nation.\r\n\r\nYour pursuit will lead you through the winding alleys of the City of London and across the historic spans of Tower Bridge. The perpetrators are skilled and calculated, likely having studied the Tower's defenses for months. You must outmaneuver them by finding the small oversights in their grand plan. From the shadows of the White Tower to the modern glass of the Shard, every landmark holds a potential clue. Time is your greatest enemy, as the trail leads toward the docks and a potential escape from the country. Good luck, Detective.",
         "location": "Tower Bridge",
         "time": "90-120 min",
         "difficulty": "Hard",

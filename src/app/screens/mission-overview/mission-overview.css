@@ -1,0 +1,32 @@
+.paper-shadow {
+    box-shadow:
+        0 4px 6px -1px rgba(0, 0, 0, 0.1),
+        0 2px 4px -1px rgba(0, 0, 0, 0.06),
+        0 10px 15px -3px rgba(0, 0, 0, 0.1),
+        inset 0 0 40px rgba(0, 0, 0, 0.05);
+}
+
+.polaroid-container {
+    perspective: 1000px;
+}
+
+.polaroid-frame {
+    transition: transform 0.3s ease-out;
+    box-shadow:
+        0 10px 20px rgba(0, 0, 0, 0.19),
+        0 6px 6px rgba(0, 0, 0, 0.23);
+}
+
+.polaroid-frame:hover {
+    transform: rotate(0deg) scale(1.02);
+}
+
+.font-handwriting {
+    font-family: 'Permanent Marker', 'Dancing Script', cursive;
+}
+
+/* Ensure the content feels like it's on paper */
+.bg-detective-cream {
+    background-image: radial-gradient(#2D1B1B10 0.5px, transparent 0.5px);
+    background-size: 10px 10px;
+}

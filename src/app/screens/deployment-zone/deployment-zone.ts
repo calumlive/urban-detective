@@ -17,6 +17,9 @@ export class DeploymentZone {
   currentStop = computed(() => this.gameState.activeClueIndex() + 1);
   totalStops = computed(() => this.gameState.clues().length);
   progressPercent = computed(() => (this.currentStop() / this.totalStops()) * 100);
+  activeClue = computed(() => this.gameState.activeClue());
+  startLocation = computed(() => this.activeClue()?.startLocation || 'Unknown Start');
+  instructions = computed(() => this.activeClue()?.instructions || []);
 
   atLocation() {
     this.router.navigate(['/clue']);

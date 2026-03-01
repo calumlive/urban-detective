@@ -6,6 +6,8 @@ export interface MissionSummary {
   id: string;
   title: string;
   subtitle: string;
+  summary: string;
+  description: string;
   location: string;
   time: string;
   difficulty: string;
@@ -34,6 +36,8 @@ export interface Clue {
   hint: string;
   eliminates: string;
   eliminationReason: string;
+  startLocation?: string;
+  instructions?: string[];
 }
 
 export interface MissionDetail {
