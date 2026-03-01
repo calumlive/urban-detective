@@ -43,43 +43,78 @@
         "clues": [
             {
                 "id": "clue-1",
-                "title": "Field Intel 1",
-                "prompt": "Look closely at the base of Grey's Monument for a four-digit number carved into the stone.",
+                "title": "The Reformist's Column",
+                "prompt": "Standing at the base of Grey's Monument, search for a four-digit number carved into the weathered stone. This 135-foot column commemorates Earl Grey, the local Prime Minister who overhauled the British electoral system. \n\nDid you know he's also the namesake of the world-famous Earl Grey tea? Look near the entrance steps to find the year that marks a major restoration of this historic Newcastle landmark.",
                 "hint": "It's near the entrance, look down.",
                 "eliminates": "suspect-1",
-                "eliminationReason": "ALIBI VERIFIED: LOCATION CLUE 1"
+                "eliminationReason": "ALIBI VERIFIED: LOCATION CLUE 1",
+                "startLocation": "Central Station",
+                "instructions": [
+                    "Exit the main station portico and head toward the rows of handsome stone buildings.",
+                    "Cross the street at the lights, keeping the cathedral to your left.",
+                    "Walk up Grainger Street, passing the ornate Victorian storefronts.",
+                    "The monument will appear at the intersection of Grey Street and Blackett Street."
+                ]
             },
             {
                 "id": "clue-2",
-                "title": "Field Intel 2",
-                "prompt": "Find the animal carved above the old bank entrance.",
+                "title": "The Guardian of Grey Street",
+                "prompt": "As you walk down the elegant curve of Grey Street—once voted the finest street in Britain—locate the grand entrance of the former bank. Above the heavy doors, you'll find a majestic animal carved into the stone. \n\nGrey Street was almost entirely designed by Richard Grainger in the 1830s. Identify this silent stone guardian to prove your worth and uncover the suspect's hidden trail through the city.",
                 "hint": "It's a bird of prey.",
                 "eliminates": "suspect-2",
-                "eliminationReason": "ALIBI VERIFIED: CCTV FOOTAGE"
+                "eliminationReason": "ALIBI VERIFIED: CCTV FOOTAGE",
+                "startLocation": "Grey's Monument",
+                "instructions": [
+                    "With your back to the monument, face down the elegant curve of Grey Street.",
+                    "Walk past the coffee shops, staying on the left-hand pavement.",
+                    "Look for the grand facade with the heavy mahogany doors of the former bank.",
+                    "Cast your eyes upward to the stone archway above the entrance."
+                ]
             },
             {
                 "id": "clue-3",
-                "title": "Field Intel 3",
-                "prompt": "Count the number of green pillars inside the market.",
+                "title": "The Market's Iron Backbone",
+                "prompt": "Step inside the Grainger Market, a bustling hub of commerce that has served Newcastle since 1835. At its opening, it was the largest covered market in Europe! \n\nNavigate through the vibrant aisles to find the historic central weighing station. Count the number of iconic green-painted iron pillars that support this magnificent Victorian structure. Each pillar has witnessed nearly two centuries of local trade and chatter. How many do you see?",
                 "hint": "Look near the weighing station.",
                 "eliminates": "suspect-3",
-                "eliminationReason": "ALIBI VERIFIED: WITNESS STATEMENT"
+                "eliminationReason": "ALIBI VERIFIED: WITNESS STATEMENT",
+                "startLocation": "Grey Street",
+                "instructions": [
+                    "Continue down Grey Street until you see the entrance to High Bridge.",
+                    "Turn right into Grainger Market through one of its many green-painted gates.",
+                    "Navigate through the bustling aisles toward the central weighing station.",
+                    "The pillars are part of the heritage structure; they are unmistakable."
+                ]
             },
             {
                 "id": "clue-4",
-                "title": "Field Intel 4",
-                "prompt": "What is the name of the mask on the left side of the Theatre Royal?",
+                "title": "The Silent Watcher",
+                "prompt": "The Theatre Royal on Grey Street is one of the most famous theatres in the country, boasting a stunning Grade I listed facade. It was opened in 1837 and is the regional home of the Royal Shakespeare Company. \n\nExamine the intricate architectural details on the left side of the grand portico. Can you identify the specific theatrical mask—either Comedy or Tragedy—that watches over the theatre-goers as they arrive for the evening's performance?",
                 "hint": "Comedy or Tragedy?",
                 "eliminates": "suspect-4",
-                "eliminationReason": "ALIBI VERIFIED: FORENSICS"
+                "eliminationReason": "ALIBI VERIFIED: FORENSICS",
+                "startLocation": "Grainger Market",
+                "instructions": [
+                    "Exit the market via the Grainger Street exit.",
+                    "Walk north toward the monument once more, but stay on the right side.",
+                    "Stop when you reach the grand pillars of the Theatre Royal.",
+                    "Examine the architectural details on the left-hand side of the main portico."
+                ]
             },
             {
                 "id": "clue-5",
-                "title": "Field Intel 5",
-                "prompt": "Identify the crest on the front gate of the Castle.",
+                "title": "The Fortress Gate",
+                "prompt": "The 'New Castle' that gave the city its name was founded in 1080 by Robert Curthose, the eldest son of William the Conqueror. The current stone Keep dates back to 1172. \n\nHead to the main gate and identify the distinct crest emblazoned on the heavy ironwork. This crest represents the city's long-standing resilience and heritage. What symbols do you see that link this ancient fortress to the modern-day heart of Newcastle?",
                 "hint": "It has three castles on it.",
                 "eliminates": "suspect-5",
-                "eliminationReason": "ALIBI VERIFIED: RECEIPT FOUND"
+                "eliminationReason": "ALIBI VERIFIED: RECEIPT FOUND",
+                "startLocation": "Theatre Royal",
+                "instructions": [
+                    "Head south once more, descending the full length of Grey Street.",
+                    "Cross the busy junction at the bottom of the hill.",
+                    "Follow the signs for the 'Castle Keep', taking the path up the stairs.",
+                    "The main gate is a heavy iron structure with a distinct crest."
+                ]
             }
         ]
     },
@@ -127,43 +162,72 @@
         "clues": [
             {
                 "id": "clue-6",
-                "title": "Quayside Clue 1",
-                "prompt": "What color is the middle pillar of the Millennium Bridge?",
+                "title": "The Blinking Eye",
+                "prompt": "Marvel at the Gateshead Millennium Bridge, the world's first tilting bridge, which opened in 2001 to celebrate the new millennium. \n\nKnown locally as the 'Blinking Eye' due to its unique shape when opening, it connects the BALTIC Centre for Contemporary Art with the Newcastle Quayside. Look closely at the central support structure and identify the color of the middle pillar. This engineering marvel has won numerous awards for its innovative and elegant design.",
                 "hint": "It reflects in the water.",
                 "eliminates": "suspect-7",
-                "eliminationReason": "CLEARED: INSUFFICIENT EVIDENCE"
+                "eliminationReason": "CLEARED: INSUFFICIENT EVIDENCE",
+                "startLocation": "Baltic Centre",
+                "instructions": [
+                    "Exit the Baltic and walk toward the river front.",
+                    "The bridge is right in front of you; notice its unique curved shape.",
+                    "Walk along the wooden decking of the bridge's pedestrian path."
+                ]
             },
             {
                 "id": "clue-7",
-                "title": "Quayside Clue 2",
-                "prompt": "Find the plaque detailing the history of the Swing Bridge.",
+                "title": "The Swing Bridge Mystery",
+                "prompt": "The Swing Bridge, opened in 1876, stands on the site of the original Roman and medieval bridges across the Tyne. It was designed by Lord Armstrong to allow larger ships to reach his works further upriver. \n\nLocate the historical plaque on the Gateshead side of the bridge. Read the details about its hydraulic operation, a feat of Victorian engineering that still functions perfectly today. What is the key date mentioned for its first official opening?",
                 "hint": "It's on the Gateshead side.",
                 "eliminates": "suspect-8",
-                "eliminationReason": "CLEARED: ALIBI CONFIRMED"
+                "eliminationReason": "CLEARED: ALIBI CONFIRMED",
+                "startLocation": "Millennium Bridge",
+                "instructions": [
+                    "Cross the bridge to the Newcastle side and turn left.",
+                    "Walk along the quayside path, passing the Guildhall.",
+                    "The red and white Swing Bridge is ahead; look for the metal plaque."
+                ]
             },
             {
                 "id": "clue-8",
-                "title": "Quayside Clue 3",
-                "prompt": "Locate the sculpture of the river god.",
+                "title": "The Gaze of Father Tyne",
+                "prompt": "Beneath the towering arches of the Tyne Bridge, search for the massive sculpture of the river god. This iconic figure, representing 'Father Tyne,' was created for the 1960s Civic Centre but now keeps a watchful eye over the river traffic. \n\nThe Tyne Bridge itself was the largest single-span bridge in Britain when it opened in 1928. Identify what the river god is holding to unlock the next piece of this Quayside mystery.",
                 "hint": "He faces the Tyne.",
                 "eliminates": "suspect-9",
-                "eliminationReason": "CLEARED: DNA MISMATCH"
+                "eliminationReason": "CLEARED: DNA MISMATCH",
+                "startLocation": "Swing Bridge",
+                "instructions": [
+                    "Walk back toward the Millennium bridge, but stay high near the road.",
+                    "Look for the statues built into the walls of the Tyne Bridge ramp.",
+                    "The river god statue is massive and made of concrete."
+                ]
             },
             {
                 "id": "clue-9",
-                "title": "Quayside Clue 4",
-                "prompt": "What time does the Baltic clock show?",
+                "title": "The Miller's Legacy",
+                "prompt": "The BALTIC Centre for Contemporary Art is housed in a colossal former flour mill, originally built by Rank Hovis in 1950. Since its conversion in 2002, it has become a world-renowned gallery. \n\nLook up at the high-altitude clock face visible on the building's exterior. This landmark serves as a constant reminder of the building's industrial past while it now looks toward a creative future. What time is frozen in stone or displayed on its modern face?",
                 "hint": "Look up at the converted mill.",
                 "eliminates": "suspect-10",
-                "eliminationReason": "CLEARED: WITNESS TESTIMONY"
+                "eliminationReason": "CLEARED: WITNESS TESTIMONY",
+                "startLocation": "Tyne Bridge",
+                "instructions": [
+                    "Look across the water toward the big brick building.",
+                    "The clock face is visible from this high vantage point."
+                ]
             },
             {
                 "id": "clue-10",
-                "title": "Quayside Clue 5",
-                "prompt": "Count the arches on the Tyne Bridge.",
+                "title": "The Steel Ribs of the North",
+                "prompt": "Standing directly under the massive steel structure of the Tyne Bridge, you can truly appreciate the 7,000 tons of steel used in its construction. It was built using shipbuilding techniques by the same company that constructed the Sydney Harbour Bridge! \n\nCount the repeating green iron arches that sweep across the river level. These arches are the ultimate symbols of Tyneside's industrial strength and engineering prowess. How many of these steel ribs can you count?",
                 "hint": "Look from the lower level.",
                 "eliminates": "suspect-11",
-                "eliminationReason": "CLEARED: CAMERA FOOTAGE"
+                "eliminationReason": "CLEARED: CAMERA FOOTAGE",
+                "startLocation": "Baltic Clock",
+                "instructions": [
+                    "Descend the stairs back to the river level.",
+                    "Stand directly under the bridge to see its massive steel structure.",
+                    "Look up at the repeating patterns of the green ironwork."
+                ]
             }
         ]
     }
