@@ -1,0 +1,26 @@
+:host {
+    display: block;
+    height: 100%;
+}
+
+/* Clue prompt banner fades in */
+:host .bg-detective-red {
+    animation: fadeIn 0.35s 0.1s ease both;
+}
+
+/* Clue content sections slide in with stagger */
+:host .space-y-6>*:nth-child(1) {
+    animation: slideInRight 0.35s 0.08s cubic-bezier(0.22, 1, 0.36, 1) both;
+}
+
+:host .space-y-6>*:nth-child(2) {
+    animation: slideInRight 0.35s 0.18s cubic-bezier(0.22, 1, 0.36, 1) both;
+}
+
+:host .space-y-6>*:nth-child(3) {
+    animation: slideInRight 0.35s 0.28s cubic-bezier(0.22, 1, 0.36, 1) both;
+}
+
+:host .space-y-6>*:nth-child(n+4) {
+    animation: slideInRight 0.35s 0.36s cubic-bezier(0.22, 1, 0.36, 1) both;
+}

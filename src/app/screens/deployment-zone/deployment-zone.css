@@ -1,0 +1,30 @@
+:host {
+    display: block;
+    height: 100%;
+}
+
+/* Progress bar fills with a smooth transition */
+:host .h-full.bg-detective-red {
+    transition: width 0.5s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+/* Navigation instruction steps slide in with stagger */
+:host .space-y-4>*:nth-child(1) {
+    animation: slideInRight 0.3s 0.08s cubic-bezier(0.22, 1, 0.36, 1) both;
+}
+
+:host .space-y-4>*:nth-child(2) {
+    animation: slideInRight 0.3s 0.16s cubic-bezier(0.22, 1, 0.36, 1) both;
+}
+
+:host .space-y-4>*:nth-child(3) {
+    animation: slideInRight 0.3s 0.24s cubic-bezier(0.22, 1, 0.36, 1) both;
+}
+
+:host .space-y-4>*:nth-child(4) {
+    animation: slideInRight 0.3s 0.32s cubic-bezier(0.22, 1, 0.36, 1) both;
+}
+
+:host .space-y-4>*:nth-child(5) {
+    animation: slideInRight 0.3s 0.40s cubic-bezier(0.22, 1, 0.36, 1) both;
+}
