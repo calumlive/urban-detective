@@ -1,11 +1,12 @@
-<div class="h-screen w-full bg-detective-wood flex justify-center items-center font-sans overflow-hidden">
+<div class="h-[100dvh] w-full bg-detective-wood flex justify-center items-center font-sans overflow-hidden">
   <div
-    class="w-full h-full md:max-w-md md:h-[90dvh] bg-detective-brown md:border-[12px] md:border-black md:rounded-[40px] relative overflow-hidden shadow-[0_0_100px_rgba(0,0,0,0.8)] flex flex-col">
+    class="w-full h-[100dvh] md:h-[90dvh] md:max-w-md bg-detective-brown md:border-[12px] md:border-black md:rounded-[40px] relative overflow-hidden shadow-[0_0_100px_rgba(0,0,0,0.8)] flex flex-col">
     <!-- Main Content Area -->
 
     <!-- Menu Backdrop – outside <main> so it is never clipped by route animations -->
-    <div class="absolute inset-0 bg-black/70 backdrop-blur-[2px] z-[40] transition-opacity duration-300" [class.opacity-0]="!menuService.isOpen()"
-      [class.pointer-events-none]="!menuService.isOpen()" (click)="menuService.close()">
+    <div class="absolute inset-0 bg-black/70 backdrop-blur-[2px] z-[40] transition-opacity duration-300"
+      [class.opacity-0]="!menuService.isOpen()" [class.pointer-events-none]="!menuService.isOpen()"
+      (click)="menuService.close()">
     </div>
 
     <!-- Slide-in Menu Drawer -->
@@ -16,20 +17,24 @@
       <div class="p-8 pt-20 flex-grow">
         <div class="space-y-6">
           <a routerLink="/" (click)="menuService.close()" class="flex items-center space-x-4 group">
-            <div class="wax-seal scale-[0.4] -ml-4 flex-none group-hover:scale-[0.55] transition-transform duration-300">
+            <div
+              class="wax-seal scale-[0.4] -ml-4 flex-none group-hover:scale-[0.55] transition-transform duration-300">
               <i class="fa-solid fa-house text-white text-base"></i>
             </div>
-            <span class="font-heading text-white text-xl uppercase tracking-widest opacity-80 group-hover:opacity-100 transition-opacity">Home</span>
+            <span
+              class="font-heading text-white text-xl uppercase tracking-widest opacity-80 group-hover:opacity-100 transition-opacity">Home</span>
           </a>
 
-          <a href="javascript:void(0)" (click)="menuService.close()" class="flex items-center space-x-4 group opacity-50 cursor-not-allowed">
+          <a href="javascript:void(0)" (click)="menuService.close()"
+            class="flex items-center space-x-4 group opacity-50 cursor-not-allowed">
             <div class="wax-seal scale-[0.4] -ml-4 flex-none">
               <i class="fa-solid fa-circle-info text-white text-base"></i>
             </div>
             <span class="font-heading text-white text-xl uppercase tracking-widest">About</span>
           </a>
 
-          <a href="javascript:void(0)" (click)="menuService.close()" class="flex items-center space-x-4 group opacity-50 cursor-not-allowed">
+          <a href="javascript:void(0)" (click)="menuService.close()"
+            class="flex items-center space-x-4 group opacity-50 cursor-not-allowed">
             <div class="wax-seal scale-[0.4] -ml-4 flex-none">
               <i class="fa-solid fa-question text-white text-base"></i>
             </div>
@@ -37,7 +42,8 @@
           </a>
 
           <a href="javascript:void(0)" (click)="menuService.close()" class="flex items-center space-x-4 group">
-            <div class="wax-seal scale-[0.4] -ml-4 flex-none group-hover:scale-[0.55] transition-transform duration-300 bg-yellow-600/20">
+            <div
+              class="wax-seal scale-[0.4] -ml-4 flex-none group-hover:scale-[0.55] transition-transform duration-300 bg-yellow-600/20">
               <i class="fa-solid fa-crown text-[#FFD700] text-base"></i>
             </div>
             <span
@@ -61,7 +67,8 @@
     </div>
 
     <!-- Content wrapper -->
-    <main class="flex-grow min-h-0 bg-detective-brown relative overflow-hidden" [@routeAnimations]="prepareRoute(outlet)">
+    <main class="flex-grow min-h-0 bg-detective-brown relative overflow-hidden"
+      [@routeAnimations]="prepareRoute(outlet)">
       <router-outlet #outlet="outlet"></router-outlet>
     </main>
   </div>
